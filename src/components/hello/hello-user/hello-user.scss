@@ -1,0 +1,322 @@
+@import '../../styles/variables';
+
+@keyframes pulsar1 {
+    0% {
+        transform: scale(1);
+  
+        background-color: rgb(103, 78, 228);
+      }
+      50% {
+        transform: scale(1);
+        background-color: rgb(101, 148, 225);
+      }
+      75% {
+        transform: scale(1);
+        background-color: rgb(96, 216, 227);
+      }
+      100% {
+        transform: scale(1);
+        background-color: rgb(135, 115, 236);
+      }
+     
+}
+@keyframes Slide {
+    from {
+        transform: translateX(5px)
+    } to {
+        transform: translateX(10px);
+    }
+    
+}
+@keyframes pulsar2 {
+    0% {
+        transform: scale(1);
+  
+        background-color: #d2691e
+      }
+      50% {
+        transform: scale(1);
+        background-color: #e19057
+      }
+      75% {
+        transform: scale(1);
+        background-color: #ef2614
+      }
+      100% {
+        transform: scale(1);
+        background-color: #efd406
+      }
+     
+}
+@keyframes pulsar3 {
+    0% {
+        transform: scale(1);
+  
+        background-color: #9932cc
+      }
+      50% {
+        transform: scale(1);
+        background-color: #d11dc5
+      }
+      75% {
+        transform: scale(1);
+        background-color:#9c08e7
+      }
+      100% {
+        transform: scale(1);
+        background-color: #750fea
+      }
+     
+}
+
+
+.hello__user__design {
+  padding: 15px 40px;
+    width: 100%;
+  
+    z-index: 1;
+    position: relative;
+    opacity: .7;
+    
+
+  
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    column-gap: 20px;
+    grid-template-rows: 60vh;
+    overflow: hidden;
+    
+    opacity: 1;
+    &__button__row{
+
+
+
+
+
+    }
+    &__button__heart {
+      cursor: pointer;
+      background-color: inherit;
+      
+      border-radius: 120px;
+      border: none;
+      width: 35px;
+      height: 35px;
+      opacity: .5;
+   
+      background-color:#e80c22;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      backdrop-filter: blur(10px);
+      position: relative;
+      transition: all opacity .5 ease;
+
+
+
+      &:hover{
+        position: relative;
+        top: 2px;
+        background-color: $MainColor;
+        opacity: .8;
+      }
+      // &::after{
+      //   overflow: hidden;
+      //   z-index: 1;
+      //   content: "";
+      //   display: block;
+      //   border-radius: 50px;
+      //   width: 15px;
+      //   height: 20px;
+      //   top: 10px;
+      //   background-color: #ef2614;
+      //   position: absolute;
+      
+
+      img{
+       
+        width: 25px;
+        height: 25px;
+      }
+      
+       
+
+      
+    }
+
+    &.active{
+     
+        opacity: 1;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    
+      grid-template-columns: repeat(3, 30%);
+
+    }
+    &__block {
+      
+      border-radius: 10px;
+        transition: all 0.5s ease opacity 0.5s ease;
+        position: relative;
+        cursor: pointer;
+       max-height: 700px;
+        width:  24vw;
+        
+        overflow: hidden;
+       opacity: 1;
+       transform: scaleY(1); 
+       transition: transform cubic-bezier(0.075, 0.82, 0.165, 1);
+
+        &.active {
+            transition: width 2s, height 2s;
+            transform: scaleY(1); 
+            opacity: 1;
+         
+            max-width: 1150;
+            z-index: 1;
+            height: 100%;
+           position: absolute;
+           
+
+           
+        }
+        
+
+        &:hover {
+         
+            z-index: 1;
+            color: white;
+            border: 10px solid rgb(255, 255, 255);
+                opacity: 1.7;
+         
+             
+                box-shadow: 10, 20, 30 ,30 rgb(230, 225, 225);
+            }
+
+        
+       
+        &__button{
+            position: fixed;
+            right: 0;
+        }
+
+    
+        }
+     
+
+    //    &:hover {
+    //     color: white;
+    //     border: 10px solid rgb(255, 255, 255);
+    //         opacity: 1.7;
+    //         margin-top: 4px;
+    //         box-shadow: 10, 20, 30 ,30 rgb(230, 225, 225);
+    //     }
+    
+
+    &__block.left {
+        transform: scaleX(1);
+        // transition: transform .5s linear;
+        background-color: rgb(95, 95, 206);
+        opacity: 1;
+        backdrop-filter: grayscale(70%);
+     
+        &:hover{
+         animation: pulsar1 5s infinite ;
+   
+        }
+        &.active {
+            transition: width 2s, height 4s;
+            width: 100vw;
+            height: 100vh;
+            animation: open 3s forwards linear;
+            
+         
+    
+        }
+        @keyframes open {
+            from {
+                transform: scaleY(2);
+                
+            }
+            to {
+                transform: scaleX(1);
+            }
+            
+        }
+        @keyframes slide {
+
+            
+        }
+    
+       
+    }
+   
+    &__block.left:hover {
+        opacity: 1.5;
+        backdrop-filter: grayscale(90%);
+        backdrop-filter: blur(10);
+    }
+    &__block {
+        max-width: 1150px;
+        transition: transform opacity .5s ease;
+        // background-color: white;
+       
+    }
+    &__block.right {
+        transform: scale3d(1.0, 1.0, 0.5);
+        opacity: 1;
+        z-index: 2;
+        background-color: darkorchid;
+        background-size: fill;
+        backdrop-filter: saturate(5);
+        
+        opacity: .7;
+        &:hover{
+            animation: pulsar3 5s infinite;
+            transition: width 2s ease ,height 2s linear;
+            width: 100%;
+        }
+        &.active {
+            animation: open 3s forwards linear;
+         
+        }
+       
+   background-color: darkorchid;
+        background-size: fill;
+        backdrop-filter: saturate(5);
+        
+        opacity: .7;
+    }
+    &__block.right:hover {
+        opacity: 1.5;
+        backdrop-filter: grayscale(150%);
+       
+    }
+    &__block.center {
+     
+        background-size: cover;
+      background-color: chocolate;
+        z-index: 1;
+    
+    
+       
+        opacity: .5;
+        
+        backdrop-filter: blur(8px);
+        backdrop-filter: hue-rotate(80deg);
+        &:hover {
+            animation: pulsar2 5s infinite;
+            transition: width 2s;
+            width: 100%;
+        }
+        &.active {
+            animation: open 3s forwards linear;
+        }
+
+    }
+    &__block.center:hover {
+        opacity: 1.5;
+        backdrop-filter: grayscale(150%);
+    }
+
+   
+}

@@ -1,0 +1,215 @@
+@keyframes colorChange {
+    from {
+      background-color: red;
+    }
+    to {
+      background-color: blue;
+    }
+  }
+
+
+@keyframes pulse {
+    0% {
+      transform: scale(.8);
+
+      background-color: rgb(254, 12, 230);
+    }
+    50% {
+      transform: scale(.9);
+      background-color: blueviolet;
+    }
+    100% {
+      transform: scale(1.1);
+      background-color: coral;
+    }
+   
+}
+@keyframes pulseDown {
+    0% {
+      transform: scale(1.1);
+
+      background-color: rgb(254, 12, 230);
+    }
+    50% {
+      transform: scale(.9);
+      background-color: blueviolet;
+    }
+    100% {
+      transform: scale(.8);
+      background-color: coral;
+    }
+  }
+@keyframes collapseAndCenter {
+    0% {
+      transform: scaleX(2);
+      transform: translateX(20);
+    }
+    50% {
+      transform: scaleX(1);
+    }
+    100% {
+ 
+    }
+  }
+  
+  
+  /////////////////////////////////////////////////////////////  
+    // .zip3 {
+    //   animation: moveto2 7s infinite;
+    //     background-color: rgb(231, 228, 225);
+    
+    // }
+///////////////////////////////////////////////////
+
+@keyframes moveto0 {
+  from {
+      transform: translateX(-15.5vw);
+    }
+  
+    to {
+      transform: translateX(0vw);
+    }
+  }
+
+
+      // .zip2 {
+      //    animation:  moveto0 2s infinite;
+      // }
+
+      // .zip1 {
+      //    animation:  move 2s infinite;
+      //    background-color: darkorchid;
+      
+    //   ///////////////////////////////////////////
+    // .zip4 {
+    //   animation: moveto2 2s infinite;
+    //   background-color: rgb(14, 13, 13);
+    
+    // }
+    @keyframes move {
+    from {
+      transform: translateX(-4vw);
+    }
+  
+    to {
+      transform: translateX(2vw);
+    }
+  }
+    .zip {
+      color:transparent;
+    
+      .zip2{
+        animation: movetozip5 2s infinite ;
+        background-color: crimson;
+      }
+
+    .zip3 {
+      animation: moveto0 5s infinite ;
+      background-color: rgb(31, 13, 82);
+    }
+    .zip4 {
+      animation: movetozip4 2s infinite;
+      background-color: rgb(48, 23, 23);
+    
+    }}
+
+    @keyframes movetozip5 {
+      from {
+        transform: translateX(-12vw);
+    }
+    
+    to {
+        transform: translateX(1vw);
+    }
+  }
+
+   
+    @keyframes movetozip4 {
+      from {
+          transform: translateX(0vw);
+        }
+      
+        to {
+          transform: translateX(15.5vw);
+        }
+      }
+ 
+    // .zip3{
+    //   animation: moveforzip3 6s step-start;
+      
+    //     background-color: black;
+    // }
+   
+    // .zip5{
+    //   animation: moveto2 6s infinite ;
+    //   background-color: rgb(26, 198, 35);
+    // }
+    @keyframes moveforzip3 {
+      from {
+          transform: translateX(-15vw);
+        }
+      
+        to {
+          transform: translateX(0);
+        }
+      }
+    
+
+  
+    
+@keyframes collapse {
+    from {
+      transform: scaleX(0.5);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+
+
+
+
+
+
+    // backdrop-filter: blur(10px);
+   
+    // position: relative;
+    // &__red1 {
+    //     animation: colorChange 4s infinite;
+    //     z-index: 1;
+    //     rotate: -35deg;
+    //     width: 40px;
+    //     height: 15px;
+    //     border-radius: 90px;
+    //     display: block;
+    //     position: absolute;
+    //     bottom: 91px;
+    //     right: 81px;
+    //     background-color: red;
+    //     transition: opacity .5s ease;
+    //     overflow: hidden;
+    //     background-size: cover;
+
+    // }
+    // &__red2 {
+    //     animation: colorChange 4s infinite;
+    //     z-index: 1;
+    //     rotate: -147deg;
+    //     width: 40px;
+    //     height: 15px;
+    //     border-radius: 90px;
+    //     display: block;
+    //     position: absolute;
+    //     bottom: 91px;
+    //     right: 124px;
+    //     background-color: red;
+    
+    // }
+
+
+.App {
+  max-width: 1200px;
+  
+  margin: 0 auto;
+  background-color: rgba(209, 203, 203, 0.438);
+}

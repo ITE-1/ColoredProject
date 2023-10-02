@@ -1,0 +1,151 @@
+@import '../styles/variables';
+
+
+.header__panel{
+    border-bottom: 15px solid  $SecondColor;
+    padding: 10px;
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: 250px 2fr 100px;
+    
+    background-color: #ff0202;
+    background-color: rgb(235, 229, 229);
+
+    &__button__row{
+        display: flex;
+        
+        justify-content: space-evenly;
+        align-items: center;
+       column-gap: 25px;
+
+
+    }
+  
+
+
+
+
+    &__search__item{
+        
+        margin-right: 25px;
+        background-color: inherit;
+        padding:5px ;
+        display: flex;
+        :hover{
+            background-color: bisque;
+            opacity: .9;
+            position: relative;
+            top: 2px;
+            box-shadow: 0 0 0,4 1.4;
+
+        }
+        input{
+            padding: 5px 10px;
+            display: none;
+            width: 250px;
+            margin-right: 10px;
+
+        }
+       
+        
+        img{
+            opacity: .5;
+            height: 35px;
+            width: 35px;
+            background-color: white;
+        }
+
+        input.active{
+            text-align: right;
+
+            display: block;
+
+            
+        }
+    }
+
+    &__home{
+        margin-left: 50px;
+        margin-right: 50px;
+       
+
+        opacity: .5;
+        cursor: pointer;
+        border: none;
+        position: relative;
+        background-color: rgb(235, 229, 229) transparent;
+        top: 1px;
+
+        &:hover{
+            background-color: bisque;  
+            opacity: 1;
+        }
+        
+    img{
+        background-color: rgb(235, 229, 229) transparent;
+        backdrop-filter: blur(10px);
+        background-color: transparent;
+        width: 35px;
+        height: 35px;
+    }
+}
+    &__powerbutton{
+        margin: 0 auto;
+        position: sticky;
+        opacity: .7;
+        border: none;
+       background-color: transparent;
+       transition: all  opacity 0.4 ease linear;
+
+
+       &:hover{
+        
+        background-color: bisque;
+        opacity: 1;
+        background-size: contain;
+       }
+
+    }
+
+    &__powerbutton__img{
+        cursor: pointer;
+        width: 45px;
+        height: 45px;
+        border-Radius: 55px;
+        background-Color: transparent;
+     
+       position: relative;
+       top: 1px;
+        
+    }
+   
+    &__modul__button {
+        cursor: pointer;
+        opacity: .5;
+        background-color: transparent;
+        border: none;
+            width: 45px;
+            height: 35px;
+
+        img {
+            width: 100%;
+        }
+        &:hover{
+            opacity: 9;
+            background-color: bisque;
+            position: relative;
+            top: 1px;
+
+        }
+        &__intro{
+            z-index: 0;
+            position: absolute;
+            top: 50px;
+
+        }
+    } 
+       
+
+
+    
+}

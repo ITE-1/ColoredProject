@@ -1,0 +1,68 @@
+@import '../../styles/variables';
+
+h1 , p { margin: 0;
+    padding: 0;
+    }   
+
+.hello__intro__modal {
+   
+  
+   
+    border-left: $MainColor;
+
+    &.close{ 
+
+        display: none;
+    }
+    
+
+    &.open {
+        display: block;
+
+       
+    }
+}
+.modal__window {
+    position: fixed;
+    top: 50px;
+    left: 150px;
+   z-index: 1;
+    border: 7px solid black;
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+    max-width: 550px;
+    min-height: 150px;
+    background-color: white;
+    
+
+
+    &__title{
+        background-color: $SecondColor;
+        text-wrap: nowrap;
+        font-size: 25px;
+        display: flex;
+        column-gap: 10px;
+        justify-content: center;
+    
+        font-size: 28px;
+        padding: 5px;
+        border-left: $MainColor;
+    }
+    &__triger {
+        margin-left: 10px;
+    }
+
+    &__container {
+        padding: 5px 10px;
+        height: 100%;
+        border-top: none;
+        
+      
+    }
+
+ 
+      
+
+      
+
+}
